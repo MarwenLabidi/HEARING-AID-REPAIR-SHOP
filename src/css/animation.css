@@ -1,0 +1,11 @@
+#iconMenuBar {
+	animation: mymove 5s ease 2s infinite alternate both;
+
+} 
+
+@keyframes mymove {
+	from {transform: rotate(-10deg);
+        }
+	to {transform: rotate(10deg);
+        }
+}

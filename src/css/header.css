@@ -1,0 +1,42 @@
+
+header{
+	background:url(../assets/images/photo1.jpeg) no-repeat var(--clr_black);
+	background-size:100% 110%;
+	background-blend-mode:overlay;
+	color:var(--clr_white);
+	height:117vw;
+	max-height:600px;
+	min-height:310px;
+	clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+        font-size: clamp(18px, 3vw, 26px);
+}
+header nav{
+	display:flex;
+	justify-content:space-between;
+	margin:0 6%;
+}
+header nav ul{
+	list-style: none;
+}
+
+
+header main{
+	text-align:center;
+	margin:0 6%;	
+}
+header main h1{
+	font-family:var(--ff_Raleway);
+
+}
+header main p{
+	color: var(--clr_grey)
+}
+
+@media(--desktop){
+	header main {
+		width:50%;
+		margin:0 auto;
+	}
+}
+
+

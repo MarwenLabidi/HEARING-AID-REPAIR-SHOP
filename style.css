@@ -1,4 +1,7 @@
 @import "./src/css/base.css";
-
+@import "./src/css/variable.css";
+@import "./src/css/header.css";
+@import "./src/css/section-one.css";
+@import "./src/css/animation.css";
 
 

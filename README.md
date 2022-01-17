@@ -1,7 +1,7 @@
-## Welcome to HEARING AID REPAIR SHOP 
-# [Project link]()
+## Welcome to HEARING AID REPAIR SHOP A Progressive Web App
+# [App link]()
 
-## Technologies worked wih:
+## made with :
 - Html , Css , javaScript
 - Git , GitHub
-- Vite, PostCss,
+- Vite,esbuild, PostCss,workbox
