@@ -1,3 +1,81 @@
 .thirdPart{
-	color:var(--clr_white)
+	color:var(--clr_white);
+	font-size: clamp(18px, 3vw, 22px);
+	text-align: center;
+	margin:30px;
+}
+
+.thirdPart i{
+	background-color:var(--clr_white);
+	box-shadow: 0px 0px 0px 20px var(--clr_white);
+	border-radius:50%;
+	color: black;
+	margin-top:50px;
+}
+.thirdPart_section-two-cardOne p,.thirdPart_section-two-cardTwo p,.thirdPart_section-two-cardThree p{
+	max-width:400px;
+}
+.thirdPart_section-one p{
+	margin:50px auto;
+	max-width:600px;
+}
+
+.thirdPart_section-three_constactME{
+	background-color:var(--clr_grey_light);
+	opacity:0.9;
+	color:black;
+	border-radius:10px;
+	height:180vw;
+	max-height:670px;
+	max-width:600px;
+	margin:0 auto;
+	display:grid;
+	margin-top:30px;
+}
+.topForm{
+	position:relative;
+	top:-45px;
+}
+.thirdPart_section-three_constactME input{
+	width:100%;
+	margin:30px 0 ;
+	background-color:var(--clr_white);
+	height:40px;
+	top:-70px;
+}
+textarea{
+	width:100%;
+	margin-top:30px;
+	background-color:var(--clr_white);
+}
+.thirdPart label{
+	font-size:18px;
+	font-weight:bold;
+}
+.thirdPart form{
+	text-align:left;
+	margin:30px;
+}
+.thirdPart button{
+	position:relative;
+	left:25%;
+	background-color:black;
+	color:var(--clr_white);
+	width:34vw;
+	height:40px;
+	max-width:260px;
+	border-radius:10px;
+	padding:12px;
+	font-weight:bold;
+	margin-top:10px;
+
+}
+
+@media(--desktop){
+	.thirdPart_section-two{
+	display:flex;
+	justify-content:center;
+	gap:60px;
+	flex-wrap:wrap;
+        }
 }

@@ -1,5 +1,5 @@
 footer{
-	background-color:pink;
+	background-color:var(--clr_grey_light);
 	clip-path: polygon(0 21%, 100% 0, 100% 100%, 0 100%);
 
 }
