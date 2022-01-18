@@ -1,7 +1,10 @@
 @import "./src/css/base.css";
 @import "./src/css/variable.css";
 @import "./src/css/header.css";
-@import "./src/css/section-one.css";
+@import "./src/css/firstPart.css";
+@import "./src/css/secondePart.css";
+@import "./src/css/thirdPart.css";
+@import "./src/css/footer.css";
 @import "./src/css/animation.css";
 
 

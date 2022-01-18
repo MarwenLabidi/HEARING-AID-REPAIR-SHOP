@@ -44,8 +44,11 @@ const {
 const displayIconList = () => {
 	removeElement(iconMenuBar)
 	addElement(twitter, iconList)
+	twitter.classList.add('fade-in')
 	addElement(linkedin, iconList)
+	linkedin.classList.add('fade-in')
 	addElement(github, iconList)
+	linkedin.classList.add('fade-in')
 }
 
 iconMenuBar.addEventListener('click', displayIconList)

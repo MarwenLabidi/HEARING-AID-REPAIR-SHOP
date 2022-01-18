@@ -1,0 +1,4 @@
+.secondePart{
+	background-color: red;
+	clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+}
