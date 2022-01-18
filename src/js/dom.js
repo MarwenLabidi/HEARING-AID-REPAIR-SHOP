@@ -17,8 +17,8 @@ linkedin.setAttribute('href', 'https://www.linkedin.com/in/marwen-labidi-5a90821
 linkedin.setAttribute('target', '_blank')
 linkedin.innerHTML = iconLinkedin
 linkedin.style.color = "#ffffff";
-linkedin.style.paddingLeft = "10px"
-linkedin.style.paddingRight = "10px"
+linkedin.style.paddingLeft = "20px"
+linkedin.style.paddingRight = "20px"
 linkedin.style.position = "relative"
 linkedin.style.top = "8px"
 
@@ -41,7 +41,30 @@ const {
 } = await import('./utilities.js')
 
 
+
+const reset = () => {
+	linkedin.classList.remove('fade-in')
+	linkedin.classList.add('fade-out')
+	github.classList.remove('fade-in')
+	github.classList.add('fade-out')
+	twitter.classList.remove('fade-in')
+	twitter.classList.add('fade-out')
+	github.addEventListener('animationend', () => {
+		removeElement(github)
+	});
+	twitter.addEventListener('animationend', () => {
+		removeElement(twitter)
+	});
+	linkedin.addEventListener('animationend', () => {
+		removeElement(linkedin)
+		addElement(iconMenuBar, iconList)
+	});
+
+}
 const displayIconList = () => {
+	linkedin.classList.remove('fade-out')
+	github.classList.remove('fade-out')
+	twitter.classList.remove('fade-out')
 	removeElement(iconMenuBar)
 	addElement(twitter, iconList)
 	twitter.classList.add('fade-in')
@@ -49,8 +72,11 @@ const displayIconList = () => {
 	linkedin.classList.add('fade-in')
 	addElement(github, iconList)
 	linkedin.classList.add('fade-in')
-}
+	if (window.matchMedia("(max-width: 700px)").matches){
+		setTimeout(reset, 6000)
+	}
 
+}
 iconMenuBar.addEventListener('click', displayIconList)
 
 
