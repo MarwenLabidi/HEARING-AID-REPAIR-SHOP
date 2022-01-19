@@ -72,7 +72,7 @@ const displayIconList = () => {
 	linkedin.classList.add('fade-in')
 	addElement(github, iconList)
 	linkedin.classList.add('fade-in')
-	if (window.matchMedia("(max-width: 700px)").matches){
+	if (window.matchMedia("(max-width: 700px)").matches) {
 		setTimeout(reset, 6000)
 	}
 
@@ -83,3 +83,24 @@ iconMenuBar.addEventListener('click', displayIconList)
 if (window.matchMedia("(min-width: 700px)").matches) {
 	displayIconList()
 }
+
+
+// sending mail 
+const userMail = document.querySelector('input[type="email"]')
+const body = document.querySelector('textarea')
+const sendMail = document.querySelector('button[type="submit"]')
+
+sendMail.addEventListener('click', (e) => {
+	e.preventDefault();
+	Email.send({
+		Host: "smtp.gmail.com",
+		Username: "labidimarwen6@gmail.com",
+		Password: "CEFAF3C6CFF91727DA4945D0328D1CC166F2",
+		To: 'labidimarwen6@gmail.com',
+		From: 'marwen.abidi@etudiant-isi.utm.tn',
+		Subject: "",
+		Body: "hey man hhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+	}).then(
+		message => alert(message)
+	);
+})

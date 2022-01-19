@@ -7,6 +7,3 @@
 - Git , GitHub
 - Vite,esbuild, PostCss,workbox
 
-## Screenshots
-
-![App Screenshot]()
