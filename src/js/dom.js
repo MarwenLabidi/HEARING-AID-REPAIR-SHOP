@@ -72,7 +72,7 @@ const displayIconList = () => {
 	linkedin.classList.add('fade-in')
 	addElement(github, iconList)
 	linkedin.classList.add('fade-in')
-	if (window.matchMedia("(max-width: 700px)").matches){
+	if (window.matchMedia("(max-width: 700px)").matches) {
 		setTimeout(reset, 6000)
 	}
 
@@ -83,3 +83,22 @@ iconMenuBar.addEventListener('click', displayIconList)
 if (window.matchMedia("(min-width: 700px)").matches) {
 	displayIconList()
 }
+
+
+// sending mail 
+const userMail = document.querySelector('input[type="email"]')
+const body = document.querySelector('textarea')
+const sendMail = document.querySelector('button[type="submit"]')
+// google acount should have acces to third part app and unsecure app
+sendMail.addEventListener('click', (e) => {
+	e.preventDefault();
+	Email.send({
+		SecureToken: "ae3ceb8c-b1e4-400a-839e-3fb80c22c30e",
+		To: 'marwen.abidi@etudiant-isi.utm.tn',
+		From: "labidimarwen6@gmail.com",
+		Subject: "This is the subject",
+		Body: "body.value"
+	}).then(
+		message => alert(message)
+	);
+})
