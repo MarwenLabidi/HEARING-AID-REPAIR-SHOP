@@ -28,6 +28,8 @@
 	height:180vw;
 	max-height:670px;
 	max-width:600px;
+	min-width:305px;
+	min-height:655px;
 	margin:0 auto;
 	display:grid;
 	margin-top:30px;

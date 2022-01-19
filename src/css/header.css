@@ -7,6 +7,7 @@ header{
 	height:117vw;
 	max-height:600px;
 	min-height:480px;
+	min-width:400px;
 	clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
         font-size: clamp(18px, 3vw, 26px);
 }
