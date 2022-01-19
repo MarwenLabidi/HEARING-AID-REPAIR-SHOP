@@ -93,9 +93,9 @@ const sendMail = document.querySelector('button[type="submit"]')
 sendMail.addEventListener('click', (e) => {
 	e.preventDefault();
 	Email.send({
-		Host: "smtp.gmail.com",
-		Username: "labidimarwen6@gmail.com",
-		Password: "CEFAF3C6CFF91727DA4945D0328D1CC166F2",
+		Host: "smtp.mailtrap.io",
+		Username: "7d4056fc7e375f",
+		Password: "dc9d456fdfa46d",
 		To: 'labidimarwen6@gmail.com',
 		From: 'marwen.abidi@etudiant-isi.utm.tn',
 		Subject: "",
