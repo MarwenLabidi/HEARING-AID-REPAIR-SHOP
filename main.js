@@ -1,15 +1,21 @@
 import './style.css'
 import './src/js/dom.js'
+import {
+	registerSW
+} from 'virtual:pwa-register'
+
 // AOS is a scroll animation library
 AOS.init({
 	delay: 10,
 	duration: 700
 });
-import {
-	registerSW
-} from 'virtual:pwa-register'
 
+// service worker registration
 const updateSW = registerSW({
-	onNeedRefresh() {alert('Need refresh')},
-	onOfflineReady() {alert('Offline ready')},
+	onNeedRefresh() {
+		alert('Need refresh')
+	},
+	onOfflineReady() {
+		alert('Offline ready')
+	},
 })
