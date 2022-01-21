@@ -75,7 +75,7 @@
 
 
 .firstPart_section-two_imageComponent{
-	background:url(../assets/images/photo2.jpeg) no-repeat ;
+	background:url(/photo2.jpeg) no-repeat ;
 	background-size:contain;
 	width:85vw;
 	max-width:400px;

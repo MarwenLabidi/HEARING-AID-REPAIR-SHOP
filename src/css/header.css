@@ -1,6 +1,6 @@
 
 header{
-	background:url(../assets/images/photo1.jpeg) no-repeat var(--clr_black);
+	background:url(/photo1.jpeg) no-repeat var(--clr_black);
 	background-size:100% 110%;
 	background-blend-mode:overlay;
 	color:var(--clr_white);
