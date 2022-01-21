@@ -61,6 +61,12 @@ textarea{
 	border-radius:30px;
 
 }
+
+textarea::placeholder,.thirdPart_section-three_constactME input::placeholder{
+	position:absolute;
+	left:17px;
+	top:8px;
+}
 .thirdPart label{
 	font-size:18px;
 	font-weight:bold;

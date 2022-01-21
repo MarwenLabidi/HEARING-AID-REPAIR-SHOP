@@ -1,0 +1,9 @@
+input[type="email"],input[name="name"] {
+        font-size:20px;
+}
+input[type="email"]:valid,input[name="name"]:valid {
+	border: solid 3px green;
+}
+input[type="email"]:invalid:focus,input[name="name"]:invalid:focus {
+	border: solid 3px red;
+}
