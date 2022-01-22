@@ -19,3 +19,29 @@ const updateSW = registerSW({
 		alert('Offline ready')
 	},
 })
+
+//Add to Home Screen Prompt
+
+const header = document.querySelector('header');
+const btnInstall=document.createElement('button');
+btnInstall.classList.add('btn-install');
+btnInstall.innerHTML='install';
+
+
+let installPromptEvent;
+
+window.addEventListener('beforeinstallprompt', (event) => {
+	installPromptEvent = event;
+	header.insertBefore(btnInstall,header.firstChild);
+});
+
+
+btnInstall.addEventListener('click', () => {
+	installPromptEvent.prompt();
+	btnInstall.style.display = 'none';
+});
+
+window.addEventListener('appinstalled', () => {
+	btnInstall.remove();
+	deferredPrompt = null;
+});

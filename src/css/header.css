@@ -11,6 +11,14 @@ header{
 	clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
         font-size: clamp(18px, 3vw, 26px);
 }
+.btn-install{
+	position:relative;
+	border-radius:30px;
+	left:2%;
+	height:30px;
+	width:55px;
+	font-size:15px;
+}
 header nav{
 	display:flex;
 	justify-content:space-between;
